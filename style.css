@@ -1,0 +1,171 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f1dca7;
+    overflow: hidden;
+  }
+  
+  .easter-eggs {
+    position: relative;
+    top:0;
+    left:0;
+  }
+
+  .egg-one {
+    position: relative;
+    width: 170px;
+    height: 220px;
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    background: radial-gradient( circle at 50% -10%, rgba(195,144,195,1) 20%, rgba(195,144,195,1) 20%, rgba(243,216,109,1) 20%, rgba(243,216,109,1) 40%, rgba(140,197,87,1) 40%, rgba(140,197,87,1) 60%, rgba(74,166,156,1) 60%, rgba(74,166,156,1) 80%, rgba(239,137,160,1) 80%, rgba(239,137,160,1) 100%);
+    overflow: hidden;
+    transform: rotate(20deg);
+    filter: drop-shadow(0 0 15px rgba(0,0,0,.2));
+  }
+  
+  .egg-one:before, .egg-one:after, .decoration:before, .decoration:after, .dots {
+    content:"";
+    position: absolute;
+    width: 20px;
+    height: 35px;
+    border-radius:50%;
+  }
+  
+  .egg-one:before {
+    background-color: #ed87a4;
+    top:37px;
+    left:75px;
+    box-shadow: 0 105px #f3d86d;
+  }
+  
+  .egg-one:after {
+    background-color: #ed87a4;
+    transform: rotate(30deg);
+    top:25px;
+    left:35px;
+  }
+  
+  .decoration {
+    position: absolute;
+  }
+  
+  .decoration:before {
+    background-color: #ed87a4;
+    transform: rotate(-30deg);
+    top:25px;
+    left:115px;
+  }
+  
+  .decoration:after {
+    background-color: #f3d86d;
+    top:135px;
+    left:30px;
+    transform: rotate(-10deg);
+    box-shadow: -35px -20px #f3d86d;
+  }
+  
+  .dots {
+    background-color: #f3d86d;
+    top: 120px;
+    left:155px;
+    transform: rotate(10deg);
+    box-shadow: -35px 20px #f3d86d;
+    z-index:2;
+  }
+  
+  .dots:before, .dots:after {
+    content:"";
+    position: absolute;
+    background-color: rgba(255,255,255,.3);
+    border-radius:50%;
+  }
+  
+  .dots:before {
+    width:40px;
+    height:70px;
+    left:-150px;
+    top:-40px;
+  }
+
+  .egg-two {
+    position: absolute;
+    width: 170px;
+    height: 220px;
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    background: radial-gradient(circle at 50% -10%, rgba(247,225,124,1) 20%, rgba(247,225,124,1) 20%, rgba(160,198,88,1) 20%, rgba(185,206,98,1) 27%, rgba(247,225,124,1) 27%, rgba(247,225,124,1) 32%, rgba(171,201,93,1) 32%, rgba(160,198,88,1) 40%, rgba(237,142,180,1) 40%, rgba(237,142,180,1) 60%, rgba(85,191,215,1) 60%, rgba(247,225,124,1) 60%, rgba(247,225,124,1) 64%, rgba(89,188,214,1) 64%, rgba(85,191,215,1) 80%, rgba(158,121,185,1) 80%, rgba(158,121,185,1) 100%);
+    overflow: hidden;
+    top:30px;
+    left:140px;
+    transform: rotate(-110deg);
+    filter: drop-shadow(0 0 15px rgba(0,0,0,.2));
+  }
+  
+  .egg-two:before, .egg-two:after {
+    content:"";
+    position: absolute;
+    border-radius: 50%;
+    width:30px;
+    height: 30px;
+  }
+  
+  .egg-two:before {
+    background-color: #56c1d3;
+    top:70px;
+    box-shadow: 40px 20px #56c1d3, 90px 20px #56c1d3, 140px 0 #56c1d3;
+  }
+  
+  .egg-two:after {
+    background-color: #f08cb6;
+    top:125px;
+    left:-20px;
+    box-shadow: 40px 15px #f08cb6, 90px 22px #f08cb6, 140px 15px #f08cb6, 185px 0 #f08cb6;
+  }
+  
+  .shine {
+    position: absolute;
+    background-color: rgba(255,255,255,.3);
+    border-radius:50%;
+    width:40px;
+    height:70px;
+    top:90px;
+    left:120px;
+    z-index:2;
+  }
+
+  .grass {
+    position: absolute;
+    border-top: 1px solid #90be6d;
+    border-left: 6px solid #90be6d;
+    width: 35px;
+    height: 50px;
+    border-top-left-radius: 100%;
+    top:170px;
+    filter: drop-shadow(30px 0 #90be6d) drop-shadow(160px 0 #90be6d) drop-shadow(120px 0 #90be6d);
+  }
+  
+  .grass:before {
+    content:"";
+    position: absolute;
+    border-top: 1px solid #90be6d;
+    border-right: 6px solid #90be6d;
+    width: 35px;
+    height: 50px;
+    border-top-right-radius: 100%;
+    top:0;
+    filter: drop-shadow(30px 0 #90be6d) drop-shadow(30px 0 #90be6d);
+    left:-60px;
+  }
+  
+  .grass:after {
+    content:"";
+    position: absolute;
+    border-top: 1px solid #90be6d;
+    border-right: 6px solid #90be6d;
+    width: 20px;
+    height: 35px;
+    border-top-right-radius: 100%;
+    top:20px;
+    filter: drop-shadow(30px 0 #90be6d) drop-shadow(30px 0 #90be6d);
+    left:-60px;
+  }
